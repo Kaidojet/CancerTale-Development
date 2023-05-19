@@ -1,0 +1,1 @@
+instance_destroy(obj_soul_trail_orange)

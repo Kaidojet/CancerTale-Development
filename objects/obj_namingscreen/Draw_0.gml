@@ -1,20 +1,10 @@
 if (menu == 0) {
-	draw_set_font(font_defaulttitle);
-	ha = draw_get_halign();
-	draw_set_halign(fa_center);
-	va = draw_get_valign();
-	draw_set_valign(fa_middle);
-	draw_set_color(c_white);
-	draw_text(320, 200, "UNDERTALE ENGINE");
-	draw_set_font(font_battle_dialogue);
-	draw_text(320, 260, "By QSV");
-	draw_set_font(font_battle_dialogue_overworld);
-	draw_text(320, 310, "PRESS Z TO START\nPRESS X TO ERASE SAVE DATA");
-	draw_set_halign(ha);
-	draw_set_valign(va);
+	draw_sprite(CancerTale_Logo, CancerTale_Logo, 25, 190)
 	if keyboard_check_pressed(ord("Z")) {
+		audio_play_sound(MUSIC_Menu, 0, false)
 		menu = 1;
 		if file_exists("sdt") {
+			audio_stop_sound(MUSIC_Menu)
 			LOAD();
 		}
 		exit;
@@ -163,6 +153,7 @@ if (menu == 2) {
 	}
 	
 	if keyboard_check_pressed(ord("Z")) {
+		audio_stop_sound(MUSIC_Menu)
 		if (sel == 0) {
 			room_goto(Room_HubB)
 			sel = 0;
@@ -182,6 +173,6 @@ ha = draw_get_halign();
 draw_set_halign(fa_center);
 va = draw_get_valign();
 draw_set_valign(fa_bottom);
-draw_text(320, 476, "THIS GAME WAS MADE IN THE UNDERTALE ENGINE BY QSV\nYOUR CREDITS WOULD GO HERE");
+draw_text(320, 476, "UNDERTALE ENGINE BY QSV\nCANCERTALE BY KAIDOJET AND DELTA\nUNDERTALE BY TOBY FOX");
 draw_set_halign(ha);
 draw_set_valign(va);

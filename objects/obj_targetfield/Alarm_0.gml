@@ -1,5 +1,5 @@
 if (global.Damage > 0) {
-	if (global.PlayerWeapon == "Stick" || global.PlayerWeapon == "Real Knife") {
+	if (global.PlayerWeapon == "French Bread" || global.PlayerWeapon == "Real Knife") {
 		slice = instance_create_depth(global.Monster[global.MRN].x, 140, -10, obj_Slice);
 		slice.alarm[0] = 45;
 		global.Monster[global.MRN].alarm[1] = 60;

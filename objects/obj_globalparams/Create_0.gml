@@ -39,15 +39,16 @@ global.DATA = ds_map_create();
 
 global.Item[0] = "Bandage";
 
-global.Cell[0] = "Toriel's Phone";
+global.Cell[0] = "JR's Phone";
 global.Cell[1] = "";
 global.Cell[2] = "";
 global.Cell[3] = "";
 
-global.PlayerArmor = "Bandage";
-global.PlayerWeapon = "Stick";
+global.PlayerArmor = "Leather Armor";
+global.PlayerWeapon = "French Bread";
 
 global.CanFlee = true;
 
 START_GameSetup();
 room_goto(Room_Name);
+global.OrangeBar = 5

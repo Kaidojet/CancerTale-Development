@@ -3,5 +3,5 @@
 //bullet.hspeed = (_x < 320 ? 4 : -4);
 
 CreatePlatform(true, false, 6, 130, 350, true);
-SetSoulMode("BLUE");
+SetSoulMode("ORANGE");
 CreateGB(random(640), random(480), random(360), 30, 1, 2, true);

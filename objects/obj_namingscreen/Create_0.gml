@@ -6,4 +6,4 @@ siner = 0;
 text = "Name the fallen human.";
 menu = 0;
 time_ch = 0;
-audio_play_sound(Undertale, 20, false);
+audio_play_sound(Skleleton, 20, false);

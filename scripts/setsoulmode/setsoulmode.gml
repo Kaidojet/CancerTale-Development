@@ -6,4 +6,5 @@ function SetSoulMode(Colour) {
 	if (Colour == "GREEN") obj_Soul.Mode = 2;
 	if (Colour == "YELLOW") obj_Soul.Mode = 3;
 	if (Colour == "PURPLE") obj_Soul.Mode = 4;
+	if (Colour == "ORANGE") obj_Soul.Mode = 5
 }

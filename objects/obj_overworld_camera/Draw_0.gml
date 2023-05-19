@@ -23,7 +23,7 @@ if Menu {
 	draw_set_color(c_white);
 	draw_text(cam.x + 45, cam.y + 107, "ITEM");
 	draw_text(cam.x + 45, cam.y + 120, "STAT");
-	draw_text(cam.x + 45, cam.y + 133, "CELL");
+	draw_text(cam.x + 45, cam.y + 133, "NOKIA");
 	
 	if keyboard_check_pressed(ord("X")) {
 		if OWMenu == 0 {

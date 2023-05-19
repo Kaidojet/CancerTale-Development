@@ -8,8 +8,8 @@ if Stage == 1 {
 if Stage == 2 {
 	alarm[0] = -1;
 	Dialogue = instance_create_depth(154, 348, -1000000, obj_TextElement);
-	Dialogue.TextToDraw = "@2You cannot give up&just yet!";
-	Dialogue.TextQueue[0] = "@2" + string(global.Name) + "!&Stay determined!";
+	Dialogue.TextToDraw = "Bro got skill issues!";
+	Dialogue.TextQueue[0] = "@2" + string(global.Name) + "! get better idiot.";
 	Dialogue.Talker = "Asgore";
 	Stage = 3;
 }

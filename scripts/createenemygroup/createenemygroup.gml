@@ -5,7 +5,7 @@ function CreateEnemyGroup(group) {
 	global.Monster[0] = noone;
 	global.Monster[1] = noone;
 	global.Monster[2] = noone;
-	global.BattleMusic = audio_play_sound(MUSIC_Battle, 20, true);
+	global.BattleMusic = audio_play_sound(MUSIC_Shop, 0, true);
 	if (group == 1) {
 		global.Monster[0] = instance_create_depth(320, 260, 1, obj_TestMonster);
 	}

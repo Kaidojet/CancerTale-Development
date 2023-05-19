@@ -6,7 +6,6 @@ global.BoardFloor = 0;
 PURPLE_Line1Height = 0;
 PURPLE_Line2Height = 0;
 PURPLE_Line3Height = 0;
-
 global.SoulX = x;
 global.SoulY = y;
 
@@ -15,5 +14,6 @@ enum SoulModes {
 	Blue = 1,
 	Green = 2,
 	Yellow = 3,
-	Purple = 4
+	Purple = 4,
+	Orange = 5
 }

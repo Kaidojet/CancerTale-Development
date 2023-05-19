@@ -1,4 +1,5 @@
 if (Turn > 2) {
+	global.OrangeBar = 5
 	Turn = choose(1, 2);
 }
 if (Turn == 1) {

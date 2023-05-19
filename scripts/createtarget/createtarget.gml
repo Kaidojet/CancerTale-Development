@@ -11,7 +11,7 @@ function CreateTarget(weapon) {
 	var multibarspeed = 5;
 	
 	if (global.PlayerAttack == 0) {
-		if weapon == "Stick" global.PlayerAttack = 0 + (2 * global.PlayerLV);
+		if weapon == "French Bread" global.PlayerAttack = 0 + (2 * global.PlayerLV);
 		if weapon == "Torn Notebook" global.PlayerAttack = 2 + (2 * global.PlayerLV);
 		if weapon == "Toy Knife" global.PlayerAttack = 3 + (2 * global.PlayerLV);
 		if weapon == "Tough Glove" global.PlayerAttack = 5 + (2 * global.PlayerLV);
@@ -22,7 +22,7 @@ function CreateTarget(weapon) {
 		if weapon == "Real Knife" global.PlayerAttack = 99 + (2 * global.PlayerLV);
 	}
 	
-	if (weapon == "Stick" || weapon == "Toy Knife" || weapon == "Worn Dagger" || weapon == "Real Knife" || weapon == "Tough Glove") {
+	if (weapon == "French Bread" || weapon == "Toy Knife" || weapon == "Worn Dagger" || weapon == "Real Knife" || weapon == "Tough Glove") {
 		bar = instance_create_depth(Bars_X, 384 - (global.BorderHeight / 2), -2, obj_TargetBar);
 		bar.hspeed = ((Bars_X < 320) ? 6 : -6);
 		bar.priority = pr;

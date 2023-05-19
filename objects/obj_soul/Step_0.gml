@@ -133,6 +133,13 @@ if Mode == SoulModes.Blue {
 		BLUE_Gravity += 0.07;
 	if BLUE_Gravity >= 2.5 && BLUE_Gravity < 6
 		BLUE_Gravity += 0.13;
+		if keyboard_check_pressed(ord("Z")) {
+		if instance_exists(obj_BulletGenerator) {
+		BLUE_Gravity = +7
+		audio_play_sound(Ping, 0, false)
+		instance_create_layer(x, y, "Instances", obj_soul_trail)
+		}
+		}
 }
 
 if Mode == SoulModes.Green {
@@ -204,4 +211,34 @@ if (global.InvFrames > 0) {
 else {
 	image_speed = 0;
 	image_index = 0;
+}
+if Mode == SoulModes.Orange {
+	if instance_exists(obj_BulletGenerator) {
+	image_angle = 0
+	speed = 2
+	sprite_index = Soul_Orange
+	if keyboard_check_pressed(vk_left) {
+		x -= speed * 2
+		direction = 180 
+	}
+	if keyboard_check_pressed(vk_right) {
+		x += speed * 2
+		direction = 0
+	}
+		if keyboard_check_pressed(vk_up) { 
+		y -= speed * 2;
+		direction = 90
+		}
+	if keyboard_check_pressed(vk_down) {
+		y += speed * 2;
+		direction = 270
+	}
+if keyboard_check_pressed(ord("Z")) && global.OrangeBar >= 1 {
+	global.OrangeBar -= 1
+	instance_create_layer(x, y,"Instances",obj_soul_trail_orange)
+speed = 20
+	}
+	else 
+	speed = 2
+}
 }
