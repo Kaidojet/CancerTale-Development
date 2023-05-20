@@ -6,4 +6,9 @@ function SetMusic(room) {
 		global.OverworldMusic = MUSIC_Star;
 		audio_play_sound(global.OverworldMusic, 20, true);
 	}
+	if (room == Room_Ruins1 && !audio_is_playing(MUSIC_Drop)) {
+		audio_stop_sound(global.OverworldMusic)
+		global.OverworldMusic = MUSIC_Drop
+		audio_play_sound(global.OverworldMusic, 20, true)
+}
 }

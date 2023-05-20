@@ -238,7 +238,5 @@ if keyboard_check_pressed(ord("Z")) && global.OrangeBar >= 1 {
 	instance_create_layer(x, y,"Instances",obj_soul_trail_orange)
 speed = 20
 	}
-	else 
-	speed = 2
 }
 }

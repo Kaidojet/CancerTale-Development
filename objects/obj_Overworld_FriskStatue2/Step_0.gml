@@ -1,8 +1,8 @@
 depth = -y;
 if IBox == noone {
 	IBox = instance_create_depth(x, y, depth + 1, obj_Interaction);
-	IBox.TextToDraw = "* Welcome to the Test Map!";
-	IBox.TextQueue[0] = "* Press F12 for DEBUG.& and S L to save and load!";
+	IBox.TextToDraw = "* It's not time to go there...";
+	IBox.TextQueue[0] = "* Go somewhere else.";
 }
 else {
 	IBox.x = x;

@@ -10,6 +10,8 @@ function CheckRoomForEnemies(_Steps) {
 				global.EnemyGroup = choose(1, 2);
 			if room == Room_HubA
 				global.EnemyGroup = 2;
+			if room == Room_Ruins1
+			global.EnemyGroup = 1
 			Frozen = true;
 		}
 	}

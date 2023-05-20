@@ -32,8 +32,8 @@ function START_GameSetup() {
 	ConditionChange("cell_2", "");
 	ConditionChange("cell_3", "");
 	
-	ConditionChange("armor", "Bandage");
-	ConditionChange("weapon", "Stick");
+	ConditionChange("armor", "Leather Armor");
+	ConditionChange("weapon", "French Bread");
 	
 	
 }

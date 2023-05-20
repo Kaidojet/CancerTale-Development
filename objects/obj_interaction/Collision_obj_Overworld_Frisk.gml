@@ -10,10 +10,14 @@ if (keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_enter)) && !in
 	obj_Overworld_Frisk.Frozen = true;
 	if (_Host == obj_Overworld_FriskStatue.id) {
 		TextToDraw = "* Welcome to the test map!";
-		TextQueue[0] = "* Press F12 for DEBUG&and S L to save!";
+		TextQueue[0] = "* Press F12 for DEBUG&and S L to save and load!";
 	}
 	if (_Host == obj_SavePoint.id) {
 		audio_play_sound(Heal, 20, false);
 		global.PlayerHP = global.PlayerMaxHP;
+	}
+	if (_Host == obj_Overworld_FriskStatue2.id) {
+		TextToDraw = "* I said go somewhere else."
+		TextQueue[0] = "* Understood, idiot?"
 	}
 }
